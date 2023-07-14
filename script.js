@@ -2,10 +2,10 @@ function redirectToSite() {
     let inputUrl = document.getElementById('inputUrl').value;
     let url;
 
-    if (inputUrl.startsWith('http://') || inputUrl.startsWith('https://')) {
+    if (inputUrl.startsWith('https://') || inputUrl.startsWith('http://')) {
         url = inputUrl;
     } else {
-        url = 'http://' + inputUrl;
+        url = 'https://' + inputUrl;
     }
 
     window.location.href = url;
